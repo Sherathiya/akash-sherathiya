@@ -4,48 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ma siet</title>
+    <title>my profile</title>
     <style>
         *{
-            margin: 0%;
-            padding: 0%;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
             text-decoration: none;
-        }
-        .col{
-            height: 50px;
-            background-color: rgb(10, 10, 10);
             color: white;
-            display: flex;
-            
         }
-        .row h1{
-            margin-left: 30px
+        header{
+            background-color: rgb(230, 190, 121);
+            height: 100vh;
+            justify-content: center;
+            background-size: cover;
+        }
+        span{
+            color: rgb(0, 0, 0);
+        }
+        
+        .nav{
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:0 20px;
+            /* font-size: 30px; */
 
         }
-        .row1 ul,a,i{
+        .logo{
+            font-size: 50px;
+            margin: 20px;
+        }
+        .menu a{
+            margin: 30px;
             color: white;
-            display: inline;
-            margin-left: 150px;
-            margin-top: 15px;
+        }
+        .menu a:hover{
+            color: black;
+        }
+        .but{
+            font-size: 30px;
+            /* margin: 30px; */
+            padding: 4px;
+            /* color: white; */
+            background-color: red;
+            border-radius: 10px;
+        }
+        .but:hover{
+            transition: 0.4s;
+        }
+
+        .menu{
+            /* display: flex; */
         }
     </style>
-</head> 
+</head>
 <body>
-    <div class="col">
-        <div class="row">
-           <H1>AKASH SHERATHIYA </H1>
-        </div>
-        <div class="row1">
-            <ul>
-             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>  
-             <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-             <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            </ul>
-
-        </div>
-    </div>
-    
-    <script src="https://kit.fontawesome.com/0c1b645c03.js" crossorigin="anonymous"></script>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <span>portfo</span>lio
+            </div>
+            <div class="menu">
+                <a href="home">home</a>
+                <a href="about">about</a>
+                <a href="services">services</a>
+                <a href="portfolio">portfolio</a>
+                <a href="page">page</a>
+                <a href="contact">contact</a>
+            </div>
+            <div class="but">
+                <a href="get free consultent">get free consultent</a>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
